@@ -1,0 +1,11 @@
+CREATE TABLE public."approvals"
+    (
+ id serial,
+ project_id int,
+ project_type_id int,
+ delivery_schedule date,
+ proposal_schedule date,
+ progress ------------,
+   CONSTRAINT approvalss_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

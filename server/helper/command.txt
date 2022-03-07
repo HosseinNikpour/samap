@@ -1,0 +1,2 @@
+C:\Program Files\PostgreSQL\13\bin>pg_dump -U postgres --table=baseinfo --data-only --column-inserts tejarat > data.sql 
+                                    pg_dump -U postgres -t 'public.*' --schema-only tejarat

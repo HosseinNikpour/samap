@@ -1,0 +1,13 @@
+CREATE TABLE public."proposal"
+    (
+ id serial,
+ project_id int,
+ scheduling date,
+ risks text ,
+ hardware_requirements text ,
+ difficulties text ,
+ file_attachment character varying(254) COLLATE pg_catalog."default" ,
+ declaration_fee decimal,
+   CONSTRAINT proposals_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

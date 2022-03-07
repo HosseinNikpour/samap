@@ -1,0 +1,23 @@
+CREATE TABLE public."colleague"
+    (
+ id serial,
+ title character varying(100) COLLATE pg_catalog."default" ,
+ insurance_number character varying(100) COLLATE pg_catalog."default" ,
+ personnel_code character varying(100) COLLATE pg_catalog."default" ,
+ name character varying(100) COLLATE pg_catalog."default" ,
+ last_name character varying(100) COLLATE pg_catalog."default" ,
+ account_number character varying(100) COLLATE pg_catalog."default" ,
+ card_number character varying(100) COLLATE pg_catalog."default" ,
+ phone_number character varying(100) COLLATE pg_catalog."default" ,
+ required_number character varying(100) COLLATE pg_catalog."default" ,
+ address text ,
+ postal_code character varying(100) COLLATE pg_catalog."default" ,
+ last_educational character varying(100) COLLATE pg_catalog."default" ,
+ service_location character varying(100) COLLATE pg_catalog."default" ,
+ record_id int,
+ experience_id int,
+ specialty_id int,
+ organization_level_id int,
+   CONSTRAINT colleagues_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

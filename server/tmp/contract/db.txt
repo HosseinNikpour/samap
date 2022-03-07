@@ -1,0 +1,11 @@
+CREATE TABLE public."contract"
+    (
+ id serial,
+ project_id int,
+ contract_price decimal,
+ contract_duration character varying(254) COLLATE pg_catalog."default" ,
+ contract_no character varying(254) COLLATE pg_catalog."default" ,
+ file_attachment character varying(254) COLLATE pg_catalog."default" ,
+   CONSTRAINT contracts_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

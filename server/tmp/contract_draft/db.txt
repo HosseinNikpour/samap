@@ -1,0 +1,10 @@
+CREATE TABLE public."contract_draft"
+    (
+ id serial,
+ project_id int,
+ letter_date date,
+ letter_shenase character varying(254) COLLATE pg_catalog."default" ,
+ deadline text ,
+   CONSTRAINT contract_drafts_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

@@ -1,0 +1,12 @@
+CREATE TABLE public."supplement"
+    (
+ id serial,
+ title character varying(100) COLLATE pg_catalog."default" ,
+ contract_number_id int,
+ new_amount ------------,
+ end_date date,
+ new_commitments character varying(100) COLLATE pg_catalog."default" ,
+ new_commitments2 character varying(100) COLLATE pg_catalog."default" ,
+   CONSTRAINT supplements_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

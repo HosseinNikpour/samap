@@ -1,0 +1,12 @@
+CREATE TABLE public."requestInquiry"
+    (
+ id serial,
+ project_id int,
+ reviewUnit_id int,
+ letterShenase character varying(254) COLLATE pg_catalog."default" ,
+ letterNo character varying(254) COLLATE pg_catalog."default" ,
+ inquiryDate date,
+ deadline date,
+   CONSTRAINT requestInquirys_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

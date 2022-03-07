@@ -1,0 +1,12 @@
+CREATE TABLE public."technical_committee_meeting"
+    (
+ id serial,
+ project_id int,
+ meeting_no character varying(254) COLLATE pg_catalog."default" ,
+ meeting_date date,
+ letter_shenase character varying(254) COLLATE pg_catalog."default" ,
+ letter_no character varying(254) COLLATE pg_catalog."default" ,
+ file_attachment character varying(254) COLLATE pg_catalog."default" ,
+   CONSTRAINT technical_committee_meetings_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

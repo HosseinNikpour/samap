@@ -1,0 +1,30 @@
+CREATE TABLE public."request"
+    (
+ id serial,
+ reqType_id int,
+ applicant_id int,
+ colleague_id int,
+ contractor_id int,
+ priority_id int,
+ strategy_id int,
+ execution_id int,
+ workload_id int,
+ name character varying(254) COLLATE pg_catalog."default" ,
+ goals text ,
+ scopes text ,
+ reasons text ,
+ pillars text ,
+ users text ,
+ supportRequirements text ,
+ implementationRequirements text ,
+ timePeriod text ,
+ projectRisks text ,
+ financialIncome character varying(254) COLLATE pg_catalog."default" ,
+ notFinancialIncome character varying(254) COLLATE pg_catalog."default" ,
+ prjState character varying(254) COLLATE pg_catalog."default" ,
+ prjCode character varying(254) COLLATE pg_catalog."default" ,
+ reqDate date,
+ reqUser character varying(254) COLLATE pg_catalog."default" ,
+   CONSTRAINT requests_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)

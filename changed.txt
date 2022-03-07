@@ -1,0 +1,9 @@
+technical_committeeRoutes ==>get query
+approval ==> get query =***** limit 1 ******
+contract ==> database ALTER TABLE public.contract
+	ADD column support_duration_m int,
+	ADD column support_duration_d int,
+	ADD column production_duration_m int,
+	ADD column production_duration_d int
+
+invoice_inquiry ==> add person_hours

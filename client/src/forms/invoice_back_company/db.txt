@@ -1,0 +1,12 @@
+CREATE TABLE public."invoice_payment"
+    (
+ id serial,
+ invoice_id int,
+ letter_shenase character varying(254) COLLATE pg_catalog."default" ,
+ letter_no character varying(254) COLLATE pg_catalog."default" ,
+ letter_date date,
+ file_attachment character varying(254) COLLATE pg_catalog."default" ,
+ description text ,
+   CONSTRAINT invoice_payments_pkey PRIMARY KEY (id)
+    )
+    INHERITS (public.tbl_base)
